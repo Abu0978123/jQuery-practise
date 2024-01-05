@@ -20,7 +20,7 @@
         <h1 class="alert-info text-center mb-5 p-3">
             AJAX MOCK API with ABU BAKAR
         </h1>
-        <div class="now">
+        <div class="now d-flex">
             <form action="" class="col-sm-5 " id="myform">
              <h3 class="alert-warning text-center p-2">
                 Add/Update
@@ -38,6 +38,24 @@
             </div>
             <div class="pt-10" id="msg"></div>
             </form>
+
+            <!-- here rendering the data  from api -->
+            <div class="col-sm-7 text-center">
+                <h3 class="alert-warning p-2">
+                    Show Student Information
+                </h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
         </div>
     </div>
 
