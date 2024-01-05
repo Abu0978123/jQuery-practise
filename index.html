@@ -2,98 +2,117 @@
 <html lang="en">
   <head>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href=
-"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
     <!-- jQuery library -->
-    <script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Popper JS -->
-    <script src=
-"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
-    <script src=
-"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
-    </script>
-</head>
- 
-<body>
-    <h1 class="text-center text-success">
-        Welcome to GeeksforGeeks
-    </h1>
-    <p class="text-center">
-        FORM VALIDATION USING JQUERY
-    </p>
- 
-    <div class="container">
-        <div class="col-lg-8
-                    m-auto d-block">
-            <form>
-                <div class="form-group">
-                    <label for="user">
-                        Username:
-                    </label>
-                    <input type="text"
-                           name="username"
-                           id="usernames"
-                           class="form-control">
-                    <h5 id="usercheck"
-                        style="color: red;">
-                        **Username is missing
-                    </h5>
-                </div>
- 
-                <div class="form-group">
-                    <label for="user">
-                        Email:
-                    </label>
-                    <input type="email"
-                           name="email"
-                           id="email" required 
-                           class="form-control">
-                    <small id="emailvalid"
-                           class="form-text text-muted invalid-feedback">
-                        Your email must be a valid email
-                    </small>
-                </div>
- 
-                <div class="form-group">
-                    <label for="password">
-                        Password:
-                    </label>
-                    <input type="password"
-                           name="pass"
-                           id="password"
-                           class="form-control">
-                    <h5 id="passcheck"
-                        style="color: red;">
-                        **Please Fill the password
-                    </h5>
-                </div>
- 
-                <div class="form-group">
-                    <label for="conpassword">
-                        Confirm Password:
-                    </label>
-                    <input type="password"
-                           name="username"
-                           id="conpassword"
-                           class="form-control">
-                    <h5 id="conpasscheck"
-                        style="color: red;">
-                        **Password didn't match
-                    </h5>
-                </div>
- 
-                <input type="submit"
-                       id="submitbtn"
-                       value="Submit"
-                       class="btn btn-primary">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container mt-5">
+        <h1 class="alert-info text-center mb-5 p-3">
+            AJAX MOCK API with ABU BAKAR
+        </h1>
+        <div class="now">
+            <form action="" class="col-sm-5 " id="myform">
+             <h3 class="alert-warning text-center p-2">
+                Add/Update
+             </h3>
+             <div>
+                <label for="nameid" class="form-label">Name</label>
+                <input type="text" placeholder="enter your name" class="form-control" id="nameid"/>
+             </div>
+             <div>
+                <label for="email" class="form-label">Email</label>
+                <input type="email" placeholder="enter your email" class="form-control" id="emailid"/>
+             </div>
+             <div class="mt-5">
+            <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+            <div class="pt-10" id="msg"></div>
             </form>
         </div>
     </div>
 
+    
+
+
+    <!-- <h1 class="text-center text-success">Welcome to Abu bakar page</h1>
+    <p class="text-center">FORM VALIDATION USING JQUERY</p>
+
+    <div class="container">
+      <div class="col-lg-8 m-auto d-block">
+        <form>
+          <div class="form-group">
+            <label for="user"> Username: </label>
+            <input
+              type="text"
+              name="username"
+              id="usernames"
+              class="form-control"
+            />
+            <h5 id="usercheck" style="color: red">**Username is missing</h5>
+          </div>
+
+          <div class="form-group">
+            <label for="user"> Email: </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              class="form-control"
+            />
+            <small
+              id="emailvalid"
+              class="form-text text-muted invalid-feedback"
+            >
+              Your email must be a valid email
+            </small>
+          </div>
+
+          <div class="form-group">
+            <label for="password"> Password: </label>
+            <input
+              type="password"
+              name="pass"
+              id="password"
+              class="form-control"
+            />
+            <h5 id="passcheck" style="color: red">
+              **Please Fill the password
+            </h5>
+          </div>
+
+          <div class="form-group">
+            <label for="conpassword"> Confirm Password: </label>
+            <input
+              type="password"
+              name="username"
+              id="conpassword"
+              class="form-control"
+            />
+            <h5 id="conpasscheck" style="color: red">
+              **Password didn't match
+            </h5>
+          </div>
+
+          <input
+            type="submit"
+            id="submitbtn"
+            value="Submit"
+            class="btn btn-primary"
+          />
+        </form>
+      </div>
+    </div> -->
 
     <!-- <img
       src="https://pbs.twimg.com/profile_images/1701878932176351232/AlNU3WTK_400x400.jpg"
@@ -118,10 +137,10 @@
       <input type="text" name="" id="focus">
       <input type="text" name="" id="blur">
       <input type="text" name="" id="keyup">
-    </div> --> 
+    </div> -->
 
     <script src="./js/jQuery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
-    <script src="./js/scripts.js"></script>
+    <script src="./js/crudJQajax.js"></script>
   </body>
 </html>
